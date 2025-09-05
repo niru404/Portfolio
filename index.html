@@ -1,9 +1,126 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Kajal Kumari</title>
-    </head>
-    <body>
-        <h1>Hey, i am kajal </h1>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kajal | Portfolio</title>
+  <style>
+  
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #e5e5e5;      
+      background: #0a0a0a;   
+    }
+
+    .grid-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image:
+        repeating-linear-gradient(0deg, transparent, transparent 5px, rgba(255,255,255,0.05) 5px, rgba(255,255,255,0.05) 6px, transparent 6px, transparent 15px),
+        repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(255,255,255,0.05) 5px, rgba(255,255,255,0.05) 6px, transparent 6px, transparent 15px),
+        repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(255,255,255,0.04) 10px, rgba(255,255,255,0.04) 11px, transparent 11px, transparent 30px),
+        repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(255,255,255,0.04) 10px, rgba(255,255,255,0.04) 11px, transparent 11px, transparent 30px);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 40px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    h1 span {
+      font-family: monospace;
+      color: #33ff33; 
+    }
+
+    p.intro {
+      margin-block: 5px 20px;
+      font-style: italic;
+      color: #a3a3a3;
+      font-size: 0.95rem;
+    }
+
+    nav {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #e5e5e5;
+      font-weight: 500;
+      position: relative;
+      transition: color 0.2s;
+    }
+
+    nav a::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0%;
+      background: #33ff33;
+      transition: width 0.3s;
+      margin-top: 2px;
+    }
+
+    nav a:hover {
+      color: #33ff33;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+    /*@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }*/
+}
+
+  </style>
+</head>
+<body>
+
+<div style="min-height:100svh; position:relative;">
+  <div class="grid-bg"></div>
+
+  <div class="content">
+    <h1><span>$</span> kajal Kumari</h1>
+    <p class="intro">
+      Kajal | काजल | কাজল
+(Sanskrit: कज्जल — sometimes written काजल)
+— /ˈkɑː.dʒəl/ — “kohl” / “eyeliner”
+    </p>
+
+    <h3>Namaskar, Myself Kajal aka niru.</h3>
+    <p>I'm a 18 y/o hobbyist programmer. I code coz I love puters <3.</p>
+    <p>Focused on <strong>backend & low-latency systems</strong>.</p>
+    <p>I mostly code in <strong>C, C++, Go</strong> and <strong>Rust</strong>.</p>
+    <p>Apart from these, I also hack on <em>TryHackMe</em> and solve problems on <em>Codeforces</em>.</p>
+    <p>My hobbies include reading novels, playing chess, watching anime and exploring philosophy.</p>
+    <p>I like Linux, Neovim, and Minimalism.</p>
+
+    <!-- Socials-->
+    <nav>
+      <a href="https://github.com/niru404" target="_blank">GitHub</a>
+      <a href="mailto:niruamerica@gmail.com">Mail</a>
+    </nav>
+  </div>
+</div>
+
+</body>
 </html>
